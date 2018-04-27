@@ -1,0 +1,27 @@
+
+{
+    "demoApp": {
+        "policy_details" : {
+            "home": {
+                "title": "Policy Details",
+                "createLabel": "Create a new Policy Details",
+                "createOrEditLabel": "Create or edit a Policy Details"
+            },
+            "created": "A new Policy Details is created with identifier {{ param }}",
+            "updated": "A Policy Details is updated with identifier {{ param }}",
+            "deleted": "A Policy Details is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Policy Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Policy Details"
+            },
+            "date": "Date",
+            "scheme_id": "Scheme Id",
+            "agent_id": "Agent Id",
+            "customer_name": "Customer Name",
+            "amount": "Amount",
+            "commision": "Commision"
+        }
+    }
+}

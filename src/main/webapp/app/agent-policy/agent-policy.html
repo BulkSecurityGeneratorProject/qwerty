@@ -1,0 +1,32 @@
+<div>
+    <h2>Agent Policy</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <label>Detail of Policies done by agents</label>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+            <tr>
+                <th>Sr.</th>
+                <th>Agent</th>
+                <th>Scheme</th>
+                <th>No. of policies</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="agent in vm.agentPolicies">
+                <td>{{$index+1}}</td>
+                <td>{{agent.agent}}</td>
+                <td>{{agent.scheme}}</td>
+                <td>{{agent.policies}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

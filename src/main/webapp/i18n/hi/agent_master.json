@@ -1,0 +1,22 @@
+
+{
+    "demoApp": {
+        "agent_master" : {
+            "home": {
+                "title": "Agent_masters",
+                "createLabel": "नया Agent Master बनाएँ",
+                "createOrEditLabel": "Agent Master बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Agent Master [identifier: {{ param }}] तैयार है",
+            "updated": "एक Agent Master [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Agent Master [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Agent Master [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Agent Master"
+            },
+            "name": "Name"
+        }
+    }
+}

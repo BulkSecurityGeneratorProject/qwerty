@@ -1,0 +1,62 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPolicy_detailsLabel" data-translate="demoApp.policy_details.home.createOrEditLabel">Create or edit a Policy Details</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.policy_details.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.policy_details.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="demoApp.policy_details.date" for="field_date">Date</label>
+                <div class="input-group">
+                    <input id="field_date" type="text" class="form-control" name="date" uib-datepicker-popup="{{dateformat}}" ng-model="vm.policy_details.date" is-open="vm.datePickerOpenStatus.date"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('date')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_scheme_id">Scheme</label>
+            <select ng-options="scheme.id as scheme.name for scheme in vm.scheme_master" ng-model="vm.policy_details.scheme_id" class="form-control" name="scheme_id" id="field_scheme_id"></select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_agent_id">Agent</label>
+            <select ng-options="agent.id as agent.name for agent in vm.agent_master" ng-model="vm.policy_details.agent_id" class="form-control" name="agent_id" id="field_agent_id"></select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="demoApp.policy_details.customer_name" for="field_customer_name">Customer Name</label>
+            <input type="text" class="form-control" name="customer_name" id="field_customer_name"
+                    ng-model="vm.policy_details.customer_name"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="demoApp.policy_details.amount" for="field_amount">Amount</label>
+            <input type="number" class="form-control" ng-change="vm.getCommision()" name="amount" id="field_amount"
+                    ng-model="vm.policy_details.amount"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="demoApp.policy_details.commision" for="field_commision">Commision</label>
+            <input disabled type="number" class="form-control" name="commision" id="field_commision"
+                    ng-model="vm.policy_details.commision"
+                    />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,23 @@
+
+{
+    "demoApp": {
+        "scheme_master" : {
+            "home": {
+                "title": "Scheme_masters",
+                "createLabel": "नया Scheme Master बनाएँ",
+                "createOrEditLabel": "Scheme Master बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Scheme Master [identifier: {{ param }}] तैयार है",
+            "updated": "एक Scheme Master [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Scheme Master [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Scheme Master [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Scheme Master"
+            },
+            "name": "Name",
+            "commision": "Commision"
+        }
+    }
+}

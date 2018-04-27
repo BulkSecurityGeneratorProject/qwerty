@@ -1,0 +1,36 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "scheme_id",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "agent_id",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "customer_name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "amount",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "commision",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "changelogDate": "20180427055613",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "policy_details",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

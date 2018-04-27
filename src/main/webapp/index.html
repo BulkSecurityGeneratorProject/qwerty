@@ -25,16 +25,16 @@
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <page-ribbon></page-ribbon>
+    <!--<page-ribbon></page-ribbon>-->
     <div ui-view="navbar" ng-cloak></div>
     <div class="container">
         <div class="well" ui-view="content">
             <!-- Angular views -->
         </div>
 
-        <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
-        </div>
+        <!--<div class="footer" ng-cloak>-->
+            <!--<p data-translate="footer">This is your footer</p>-->
+        <!--</div>-->
     </div>
     <noscript>
         <h1>You must enable javascript to view this page.</h1>
@@ -106,7 +106,37 @@
     <script src="app/layouts/error/error.state.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
+    <script src="app/entities/scheme-master/scheme-master-dialog.controller.js"></script>
+    <script src="app/entities/scheme-master/scheme-master-detail.controller.js"></script>
+    <script src="app/entities/scheme-master/scheme-master-delete-dialog.controller.js"></script>
+    <script src="app/entities/scheme-master/scheme-master.state.js"></script>
+    <script src="app/entities/scheme-master/scheme-master.service.js"></script>
+    <script src="app/entities/scheme-master/scheme-master.controller.js"></script>
+    <script src="app/entities/policy-details/policy-details-dialog.controller.js"></script>
+    <script src="app/entities/policy-details/policy-details-detail.controller.js"></script>
+    <script src="app/entities/policy-details/policy-details-delete-dialog.controller.js"></script>
+    <script src="app/entities/policy-details/policy-details.state.js"></script>
+    <script src="app/entities/policy-details/policy-details.service.js"></script>
+    <script src="app/entities/policy-details/policy-details.controller.js"></script>
     <script src="app/entities/entity.state.js"></script>
+    <script src="app/entities/agent-master/agent-master-dialog.controller.js"></script>
+    <script src="app/entities/agent-master/agent-master-detail.controller.js"></script>
+    <script src="app/entities/agent-master/agent-master-delete-dialog.controller.js"></script>
+    <script src="app/entities/agent-master/agent-master.state.js"></script>
+    <script src="app/entities/agent-master/agent-master.service.js"></script>
+    <script src="app/entities/agent-master/agent-master.controller.js"></script>
+    <script src="app/agent-commision/agent-commision.controller.js"></script>
+    <script src="app/agent-commision/agent-commision.directive.js"></script>
+    <script src="app/agent-commision/agent-commision.service.js"></script>
+    <script src="app/agent-commision/agent-commision.state.js"></script>
+    <script src="app/agent-policy/agent-policy.controller.js"></script>
+    <script src="app/agent-policy/agent-policy.directive.js"></script>
+    <script src="app/agent-policy/agent-policy.service.js"></script>
+    <script src="app/agent-policy/agent-policy.state.js"></script>
+    <script src="app/reports/reports.controller.js"></script>
+    <script src="app/reports/reports.directive.js"></script>
+    <script src="app/reports/reports.service.js"></script>
+    <script src="app/reports/reports.state.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>

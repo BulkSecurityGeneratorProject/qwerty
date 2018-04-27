@@ -1,0 +1,23 @@
+
+{
+    "demoApp": {
+        "scheme_master" : {
+            "home": {
+                "title": "Scheme Masters",
+                "createLabel": "Create a new Scheme Master",
+                "createOrEditLabel": "Create or edit a Scheme Master"
+            },
+            "created": "A new Scheme Master is created with identifier {{ param }}",
+            "updated": "A Scheme Master is updated with identifier {{ param }}",
+            "deleted": "A Scheme Master is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Scheme Master {{ id }}?"
+            },
+            "detail": {
+                "title": "Scheme Master"
+            },
+            "name": "Name",
+            "commision": "Commision"
+        }
+    }
+}

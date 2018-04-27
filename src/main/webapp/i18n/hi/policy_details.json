@@ -1,0 +1,27 @@
+
+{
+    "demoApp": {
+        "policy_details" : {
+            "home": {
+                "title": "Policy_details",
+                "createLabel": "नया Policy Details बनाएँ",
+                "createOrEditLabel": "Policy Details बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Policy Details [identifier: {{ param }}] तैयार है",
+            "updated": "एक Policy Details [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Policy Details [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Policy Details [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Policy Details"
+            },
+            "date": "Date",
+            "scheme_id": "Scheme Id",
+            "agent_id": "Agent Id",
+            "customer_name": "Customer Name",
+            "amount": "Amount",
+            "commision": "Commision"
+        }
+    }
+}
