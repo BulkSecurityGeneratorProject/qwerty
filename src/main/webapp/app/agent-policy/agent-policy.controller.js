@@ -51,14 +51,14 @@
             for(var i=0; i< vm.agents.length; i++){
                 for(var j=0; j<vm.schemas.length;j++){
                     var myPolicies = vm.policies.filter(function(policy) { return policy.agent_id === vm.agents[i].id});
-                    if(myPolicies.length >= 0){
                         var myPolicies2 = myPolicies.filter(function(policy) { return policy.scheme_id === vm.schemas[j].id});
                         var obj = {};
                         obj.agent = vm.agents[i].name;
                         obj.scheme = vm.schemas[j].name;
                         obj.policies = myPolicies2.length;
-                        vm.agentPolicies.push(obj);
-                    }
+                        if(obj.policies>0){
+                            vm.agentPolicies.push(obj);
+                        }
                 }
             }
         }

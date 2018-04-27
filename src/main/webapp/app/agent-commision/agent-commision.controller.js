@@ -46,7 +46,9 @@
                     for(var j=0; j < myPolicies.length; j++){
                         commision = commision + myPolicies[j].commision;
                     }
-                    vm.agents.push({name:result[i].name, commision:commision});
+                    if(commision > 0){
+                        vm.agents.push({name:result[i].name, commision:commision});
+                    }
                     commision = 0;
                 }
             }
